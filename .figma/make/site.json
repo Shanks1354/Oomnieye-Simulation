@@ -1,0 +1,10 @@
+{
+  "description": "Delivers pixel-perfect web designs by accurately replicating every detail from design files, ensuring exact visual and functional fidelity for developers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
