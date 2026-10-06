@@ -15,7 +15,7 @@ export default function ScrollAnimation() {
 
     const frameCount = 300;
     const currentFrame = (index: number) => (
-      `/frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
+      `${import.meta.env.BASE_URL}frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
     );
 
     // Preload images
