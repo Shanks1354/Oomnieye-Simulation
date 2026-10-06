@@ -1,5 +1,5 @@
 import ScrollAnimation from "./ScrollAnimation";
-const assetPath = "/assets"
+const assetPath = `${import.meta.env.BASE_URL}assets`
 
 const assets = {
   map: `${assetPath}/659e2.png`,
