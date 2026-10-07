@@ -1,6 +1,6 @@
 .scroll-animation-container {
   /* Make the container tall enough for a long scroll */
-  height: 1500vh;
+  height: 500vh;
   position: relative;
   background-color: #000;
   width: 100%;

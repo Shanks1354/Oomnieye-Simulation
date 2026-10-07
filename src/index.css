@@ -204,7 +204,7 @@ button {
   letter-spacing: -0.16px;
 }
 
-h1 {
+.hero-copy h1 {
   width: 368px;
   margin: 16px 0 0;
   color: #000;
@@ -508,7 +508,7 @@ h1 {
     width: calc(100% - 40px);
   }
 
-  h1 {
+  .hero-copy h1 {
     width: min(100%, 368px);
     font-size: clamp(45px, 13vw, 64px);
     line-height: 1.02;

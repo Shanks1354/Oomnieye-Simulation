@@ -1,5 +1,10 @@
 import { useEffect, useRef } from 'react';
 import './ScrollAnimation.css';
+import { TopHeroSection } from './components/TopHeroSection';
+import { Hero } from './components/Hero';
+import { ShowcaseSection } from './components/ShowcaseSection';
+import { CenterTextSection } from './components/CenterTextSection';
+import { ProjectsSection } from './components/ProjectsSection';
 
 export default function ScrollAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -80,8 +85,25 @@ export default function ScrollAnimation() {
 
   return (
     <div className="scroll-animation-container" ref={containerRef}>
-      <div className="canvas-wrapper">
+      <div className="canvas-wrapper pointer-events-none">
         <canvas ref={canvasRef} />
+      </div>
+      <div className="absolute top-0 left-0 w-full flex flex-col justify-between" style={{ height: '100%' }}>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <TopHeroSection />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <Hero />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <ShowcaseSection />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <CenterTextSection />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <ProjectsSection />
+        </div>
       </div>
     </div>
   );
